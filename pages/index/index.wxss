@@ -1,0 +1,65 @@
+/* pages/index/index.wxss */
+.c1 {
+  color: red;
+}
+
+.menu-1 image,.menu-2 image {
+  width: 100rpx;
+  height: 100rpx ;
+  border-radius: 50rpx;
+}
+.menu-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-2 {
+  display: flex;
+  /* 在水平方向排列 规定主轴方向:row*/
+  flex-direction: row;
+  /*主轴元素在水平方向如何展示:center/space-around/space-between*/
+  justify-content: space-around;
+}
+
+.menu-2 .item {
+  display: flex;
+  flex-direction: column;
+  /* 在副轴方向如何展示 flex-start/center/space-around/space-between*/
+  align-items: center;
+}
+
+.auction .item .title{
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.tips {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #8c8c8c;
+}
+
+.auction .item .big {
+  height: 400rpx;
+  overflow: hidden;
+}
+
+.auction .item .big image {
+  width: 100%;
+  height: 100%;
+}
+
+.auction .item .small {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.auction .item .small image {
+  height: 100rpx;
+  width: 100rpx;
+  padding-right: 20rpx;
+}
