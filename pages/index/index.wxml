@@ -1,4 +1,7 @@
 <!--pages/index/index.wxml-->
+
+<view bindtap="clickMe" data-nid="123" data-name="SD">点我跳转</view>
+
 <view>示例一</view>
 <view class="menu-1">
   <view class="item">

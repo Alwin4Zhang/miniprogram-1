@@ -1,4 +1,4 @@
-// pages/index/index.js
+// pages/redirect/redirect.js
 Page({
 
   /**
@@ -12,7 +12,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // onload接受重定向传的参数
+    console.log(options)
   },
 
   /**
@@ -62,18 +63,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  /*
-  * 点击绑定的时间
-  */ 
-  clickMe: function (e) {
-    console.log(e)
-    console.log(e.currentTarget.dataset)
-    var nid = e.currentTarget.dataset.nid
-    console.log(nid)
-    //跳转
-    wx.navigateTo({
-      url: '/pages/redirect/redirect?id=' + nid,
-    })
   }
 })
